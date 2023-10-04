@@ -31,11 +31,11 @@ img {
 }
 
 .container { 
-    max-width: 1440px;
-    padding-left: 156px; 
-    padding-right: 156px;
+    max-width: 1158px;
+
     margin-left:  auto;
     margin-right:  auto;
+    border: 1px solid blue;
 
     }
 
@@ -123,6 +123,12 @@ img {
 
 /* ---------------- END HEADER ----------------- */
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: 1px solid red;
+}
+
 /*-------------------- 1 SECTION HERO -------------------- */
 
 .hero {
@@ -134,7 +140,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
     justify-content: center;
     gap: 48px;
 }
@@ -147,6 +152,7 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    padding-top: 68px;
 }
 
 .hero-buy-btn {
@@ -165,6 +171,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    margin-bottom: 68px;
 
 
 }
@@ -181,10 +188,7 @@ img {
 }
 
 .features-container {
-    display: flex;
-    height: 344px;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .visually-hidden {
@@ -237,10 +241,6 @@ img {
 }
 
 .team-container {
-    display: flex;
-    height: 732px;
-    flex-direction: column;
-
 
 }
 
@@ -253,21 +253,19 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-top: 120px;
     padding-bottom: 72px;
+
+
 }
 .team-list {
     display: flex;
-
+    justify-content: center;
     gap: 24px;
-    
 }
 .team-item {
 
     background-color: #FFFFFF;
-    display: inline-flex;
-    flex-direction: column;
-    flex-basis: calc((100%-72px) / 4);
+    width: calc((100%-72px) / 4);
     padding-bottom:32px;
 
     border-radius: 0px 0px 4px 4px;
@@ -279,8 +277,6 @@ img {
 .frame {
     width: 100px;
     height: 100px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     margin: 32px auto;
 
 }
@@ -325,13 +321,16 @@ img {
 }
 .portfolio-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    padding-bottom: 120px;
+
+
 }
 .portfolio-item {
     flex-basis: calc((100%-48px) / 3);
+    text-align: center;
 
 }
 
@@ -365,7 +364,7 @@ img {
 /*------------------------ FOOTER ------------------------*/
 
 .footer {
-
+    background-color:#2e2f42;
 }
 
 .footer-container {
@@ -374,7 +373,6 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
-    background-color:#2e2f42;
     height: 312px;
 }
 
