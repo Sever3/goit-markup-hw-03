@@ -43,7 +43,6 @@ img {
 
 .header-container {
     display: flex;
-    border: 1px solid green;
     align-items: center;
 
 }
@@ -56,7 +55,6 @@ img {
 .header-navigation {
     display: flex;
     flex-grow: 1;
-    border: 1px solid blue;
     align-items: center;
     height: 72px;
 }
@@ -265,9 +263,11 @@ img {
     
 }
 .team-item {
+
     background-color: #FFFFFF;
     display: inline-flex;
     flex-direction: column;
+    flex-basis: calc((100%-72px) / 4);
     padding-bottom:32px;
 
     border-radius: 0px 0px 4px 4px;
@@ -309,7 +309,9 @@ img {
 /*------------------- 4 SECTION PORTFOLIO ------------------*/
 
 .portfolio {
+
 }
+
 .portfolio-title {
     color: #2E2F42;
     text-align: center;
@@ -326,12 +328,18 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-
+    padding-bottom: 120px;
 }
 .portfolio-item {
-    border: 1px solid #E7E9FC;
-    width: calc((100%-48px) / 3);
+    flex-basis: calc((100%-48px) / 3);
+
 }
+
+.portfolio-item-info {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
 .portfolio-img {
 }
 .portfolio-subtitle {
@@ -341,7 +349,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-top: 32px;
+    padding: 32px 16px 0 16px;
 }
 .portfolio-item-text {
     color: #434455;
@@ -349,8 +357,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 16px;
-    padding-bottom: 32px;
+    padding: 8px 16px 32px;
 }
 
 /*----------------- END SECTION PORTFOLIO ----------------*/
@@ -358,8 +365,19 @@ img {
 /*------------------------ FOOTER ------------------------*/
 
 .footer {
-    background-color:#2e2f42;
+
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    background-color:#2e2f42;
+    height: 312px;
+}
+
 .footer-logo {
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -378,6 +396,8 @@ img {
     color: #f4f4fd;
 }
 .footer-text {
+    width: 264px;
+    height: 72px;
     color: #F4F4FD;
     /* Body */
     font-size: 16px;
