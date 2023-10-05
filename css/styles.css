@@ -32,11 +32,9 @@ img {
 
 .container { 
     max-width: 1158px;
-
     margin-left:  auto;
     margin-right:  auto;
-    border: 1px solid blue;
-
+    padding: 0 15px;
     }
 
 /* ---------------- HEADER ----------------- */
@@ -48,7 +46,7 @@ img {
 }
 
 .header {
-
+    border-bottom: #E7E9FC;
 }
 
 
@@ -84,6 +82,8 @@ img {
 .header-menu-item {}
 
 .header-menu-link {
+    display: block;
+    padding: 24px 0;
     color: #2e2f42;
     font-size: 16px;
     font-weight: 500;
@@ -126,33 +126,36 @@ img {
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    border: 1px solid red;
 }
 
 /*-------------------- 1 SECTION HERO -------------------- */
 
 .hero {
     background-color: #2E2F42;
+    padding: 188px 0;
 
 }
 
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
+
+
+
 }
 
 
 .hero-title {
+    max-width: 496px;
     color: #ffffff;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-top: 68px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+
 }
 
 .hero-buy-btn {
@@ -171,7 +174,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-bottom: 68px;
+    margin: 0 auto;
+    display: block;
 
 
 }
@@ -222,7 +226,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -253,7 +257,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
 
 }
@@ -274,12 +278,10 @@ img {
 .team-img {
 }
 
-.frame {
-    width: 100px;
-    height: 100px;
-    margin: 32px auto;
-
+.team-card-text {
+    padding: 32px 0;
 }
+
 
 .team-subtitle {
     color: #2E2F42;
@@ -317,7 +319,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin: 108px auto 72px auto;
+    margin-bottom: 72px;
 }
 .portfolio-list {
     display: flex;
@@ -329,7 +331,7 @@ img {
 
 }
 .portfolio-item {
-    flex-basis: calc((100%-48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
     text-align: center;
 
 }
@@ -337,10 +339,12 @@ img {
 .portfolio-item-info {
     border: 1px solid #E7E9FC;
     border-top: none;
+    padding: 32px 16px;
 }
 
 .portfolio-img {
 }
+
 .portfolio-subtitle {
     color: #2E2F42;
     /* Header 3 */
@@ -348,7 +352,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding: 32px 16px 0 16px;
+    margin-bottom: 8px;
 }
 .portfolio-item-text {
     color: #434455;
@@ -356,7 +360,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 8px 16px 32px;
 }
 
 /*----------------- END SECTION PORTFOLIO ----------------*/
@@ -364,19 +367,16 @@ img {
 /*------------------------ FOOTER ------------------------*/
 
 .footer {
+    padding: 100px 0;
     background-color:#2e2f42;
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    height: 312px;
+
 }
 
 .footer-logo {
+    display: inline-block;
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -384,6 +384,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .footer-logo span {
